@@ -19,6 +19,8 @@
   "homepage": "https://github.com/neilcreveling/Portfolio-3.0#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "express-handlebars": "^5.3.2"
+    "express-handlebars": "^5.3.2",
+    "path": "^0.12.7",
+    "sequelize": "^6.6.2"
   }
 }

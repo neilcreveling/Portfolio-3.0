@@ -1,0 +1,220 @@
+
+:root {
+    --blue-light: #6495ED;
+    --grey-light: #D3D3D3;
+    --yellow-light: #FFEFD5;
+    --orange-light: #FF7F50;
+    --blue-dark: #4682B4;
+    --pink-dark: #DB7093;
+    --green-dark: #228B22;
+    --orange-dark: #CD853F;
+}
+
+#homepage {
+    color: var(--yellow-light);
+    background-color: black;
+    border-bottom: 300px;
+    border-color: var(--blue-light);
+}
+
+#aboutpage {
+    color: var(--blue-light);
+    background-color: black;
+}
+
+#workpage {
+    color: var(--orange-light);
+    background-color: black;
+}
+
+#contactpage {
+    color: var(--grey-light);
+    background-color: black;
+}
+
+.mainhr {
+    background-color: var(--yellow-light);
+    color: var(--yellow-light);
+}
+
+.abouthr {
+    border-color: var(--blue-light);
+}
+
+.workhr {
+    border-color: var(--orange-light);
+}
+
+.contacthr {
+    border-color: var(--grey-light);
+}
+
+body {
+    font-family: 'Quicksand', sans-serif !important;
+    background-color: var(--yellow-light);
+}
+
+.title {
+    font-size: 72px;
+    color: var(--orange-light);
+}
+
+.homelink {
+    color: var(--yellow-light) !important;
+}
+
+.aboutlink {
+    color: var(--blue-light) !important;
+}
+
+.worklink {
+    color: var(--orange-light) !important;
+}
+
+.contactlink {
+    color: var(--grey-light) !important;
+}
+
+.resumelink {
+    color: var(--yellow-light) !important;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+
+.jumbotron {
+    width: 100%;
+    border-radius: 15px;
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+
+.portrait {
+    border-radius: 15%;
+    margin-left: 5%;
+    width: 50%;
+}
+
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  a {
+    padding: 14px 20px;
+    font-size: 1.7rem;
+    color: var(--subtitle-border);
+    text-decoration: underline;
+    text-align: center;
+}
+
+li {
+    font-size: 1.7rem;
+}
+
+.image-row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2%;
+}
+
+.image-large {
+    border: 4px solid var(--subtitle-border);
+    border-radius: 5%;
+    margin: 2%;
+}
+
+.image-regular {
+    border: 4px solid var(--subtitle-border);
+    border-radius: 5%;
+    margin: 5%;
+}
+
+a:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+a:hover figcaption {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#imgtitle {
+    font-size: 35px;
+}
+
+#imgcap {
+    font-size: 25px;
+    color: var(--yellow-light)
+}
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 100%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+  /* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+    border-radius: 15px;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Style page content */
+  .main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+    .jumbotron {width: 300%}
+    .portrait {width: 75%}
+  }

@@ -3,7 +3,7 @@ const app = express();
 const path = require('path');
 const exphbs = require('express-handlebars');
 
-app.set('views', __dirname + '/views');
+app.set('views', './views');
 
 app.set('view engine', 'handlebars')
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));

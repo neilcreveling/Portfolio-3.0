@@ -1,12 +1,9 @@
 const express = require('express');
-const app = express();
-const path = require('path');
+const app = express()
 const exphbs = require('express-handlebars');
 
-app.set('views', './views');
-
-app.set('view engine', 'handlebars')
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
+app.set('view engine', 'handlebars');
 
 app.get('/', (req, res) => {
     res.render('home');
